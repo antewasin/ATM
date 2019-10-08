@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="Scripts/jquery-3.3.1.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="site.js?v=5"></script>
+</head>
+<body>
+    <div class="container text-center">
+       
+            <div class="col-sm-10">
+                <h2>ATM Machine</h2>
+                <hr />
+            </div>
+       
+    </div>
+    <div class="container" id="init">
+
+        <div class="form-group">
+            <div id="hi">
+                <label for="pin">Wprowadz PIN</label><br />
+                <input type="text" id="pin" />
+            </div>
+        </div>
+
+        <div>
+            <button id="check">Zatwierdź</button>
+        </div>
+    </div>
+
+    <div style="display: none; margin-top: 100px;" id="manager">
+        <p></p> <div id="btns" class="btn-group col-sm-10" role="group" aria-label="Basic example">
+            <button id="balance" type="button" class="btn btn-secondary bg-info">Stan Konta</button>
+            <button id="payment" type="button" class="btn btn-secondary bg-info">Wypłata</button>
+            <button id="changePIN" type="button" class="btn btn-secondary bg-info">Zmień PIN</button>
+        </div>
+
+        
+
+    </div>
+
+
+    <div class="container text-center" style="display: none; margin-top: 50px;" id="balanceInfo">
+        <div class="row">
+            <div class="col-sm-10">
+                <p class="d-flex justify-content-center" id="setBalanceInfo"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container text-center" style="display: none; margin-top: 50px;" id="withdrawInfo">
+        <div class="row">
+            <div class="col-sm-10">
+                <p class="d-flex justify-content-center" id="doWithdraw">
+                    <div>
+                        <label for="amount">Podaj wielkosc do wypłacenia z rachunku:</label><br />
+                        <input type="text" id="amount" />
+                    </div>
+                    <br />
+                    <div>
+                        <button id="amountBtn">Zatwierdź</button>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center" style="display: none; margin-top: 50px;" id="changePINForm">
+        <div class="row">
+            <div class="col-sm-10">
+                <p class="d-flex justify-content-center">
+                    <div>
+                        <label for="setPIN">Nowy PIN</label><br />
+                        <input type="text" id="setPIN" />
+                    </div>
+                    <br />
+                    <div>
+                        <button id="setPINBtn">Zatwierdź</button>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+﻿using ATM.Core.Domain;
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ATM.Core.IRepository
+{
+    public interface ICardRepository
+    {
+        Task<Card> GetPINAsync(Guid id);
+        Task<IEnumerable<Card>> Get();
+        Task ChangePIN(Card card);
+    }
+}
